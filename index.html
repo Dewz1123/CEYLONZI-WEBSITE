@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEYLONZI | Premium Spices, Tea & Seeds</title>
+    <meta name="description" content="CEYLONZI offers the finest, premium quality spices, tea, and seeds directly from Sri Lanka. Experience true nature.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-white md:bg-transparent">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="font-serif text-3xl font-bold tracking-wider text-primary">CEYLONZI</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-sm font-semibold text-primary border-b-2 border-primary">Home</a>
+                    <a href="products.html" class="text-sm font-medium text-gray-800 hover:text-primary transition">Products</a>
+                    <a href="about.html" class="text-sm font-medium text-gray-800 hover:text-primary transition">About Us</a>
+                    <a href="contact.html" class="text-sm font-medium text-gray-800 hover:text-primary transition">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100">
+                <a href="index.html" class="block py-2 text-primary font-semibold">Home</a>
+                <a href="products.html" class="block py-2 text-gray-600">Products</a>
+                <a href="about.html" class="block py-2 text-gray-600">About Us</a>
+                <a href="contact.html" class="block py-2 text-gray-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/images/hero.png" alt="Premium Ceylon Spices and Tea" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
+            <span class="block text-secondary font-medium tracking-widest uppercase mb-4 reveal">100% Natural & Organic</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight reveal" style="transition-delay: 0.2s;">
+                The Essence of <br/><span class="text-secondary italic">Sri Lanka</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 reveal" style="transition-delay: 0.4s;">
+                Discover our premium collection of authentic spices, rich teas, and nutritious seeds. Brought to you with love from the finest estates.
+            </p>
+            <div class="reveal" style="transition-delay: 0.6s;">
+                <a href="products.html" class="bg-primary hover:bg-green-800 text-white px-8 py-4 rounded-full font-medium transition duration-300 inline-flex items-center gap-2 shadow-lg">
+                    Shop Now <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold text-primary mb-4">Our Premium Range</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our carefully curated selection of products, harvested at peak perfection to bring you unmatched flavor and health benefits.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Spices -->
+                <a href="products.html#spices" class="group reveal rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 bg-light">
+                    <div class="relative h-72 img-hover-zoom">
+                        <img src="assets/images/spices.png" alt="Ceylon Spices" class="w-full h-full object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <h3 class="absolute bottom-6 left-6 text-3xl font-serif font-bold text-white">Spices</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Authentic cinnamon, cardamom, cloves, and more. The true taste of Ceylon.</p>
+                        <span class="text-primary font-medium group-hover:text-secondary transition">Explore Spices &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Tea -->
+                <a href="products.html#tea" class="group reveal rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 bg-light" style="transition-delay: 0.2s;">
+                    <div class="relative h-72 img-hover-zoom">
+                        <img src="assets/images/tea.png" alt="Ceylon Tea" class="w-full h-full object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <h3 class="absolute bottom-6 left-6 text-3xl font-serif font-bold text-white">Tea</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">World-renowned black, green, and white teas from the misty hills of Sri Lanka.</p>
+                        <span class="text-primary font-medium group-hover:text-secondary transition">Explore Teas &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Seeds -->
+                <a href="products.html#seeds" class="group reveal rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 bg-light" style="transition-delay: 0.4s;">
+                    <div class="relative h-72 img-hover-zoom">
+                        <img src="assets/images/seeds.png" alt="Premium Seeds" class="w-full h-full object-cover" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <h3 class="absolute bottom-6 left-6 text-3xl font-serif font-bold text-white">Seeds</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Nutrient-dense chia, pumpkin, and sesame seeds for a healthy lifestyle.</p>
+                        <span class="text-primary font-medium group-hover:text-secondary transition">Explore Seeds &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Short About Section -->
+    <section class="py-20 bg-light relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 reveal">
+                    <img src="assets/images/spices.png" alt="About Ceylonzi" class="rounded-2xl shadow-xl border-4 border-white" />
+                </div>
+                <div class="md:w-1/2 reveal" style="transition-delay: 0.2s;">
+                    <span class="text-secondary font-semibold tracking-wider uppercase mb-2 block">Our Story</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-primary mb-6">Rooted in Tradition, Crafted for the World</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        At CEYLONZI, we believe that nature provides the best ingredients. For generations, Sri Lanka has been the gem of the Indian Ocean, known for its unparalleled spices and teas. 
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        We work directly with local farmers to ensure that every product you receive is sustainably sourced, pure, and of the highest premium quality.
+                    </p>
+                    <a href="about.html" class="btn-outline px-8 py-3 rounded-full font-medium inline-block">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 border-t-4 border-secondary">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="mb-8 md:mb-0">
+                <span class="font-serif text-3xl font-bold tracking-wider text-white mb-4 block">CEYLONZI</span>
+                <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                    Delivering the authentic taste and aroma of Sri Lanka to your doorstep. Premium Spices, Tea, and Seeds.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-serif text-xl font-semibold mb-4 text-secondary">Quick Links</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="products.html" class="hover:text-white transition">Products</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-xl font-semibold mb-4 text-secondary">Categories</h4>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="products.html#spices" class="hover:text-white transition">Premium Spices</a></li>
+                    <li><a href="products.html#tea" class="hover:text-white transition">Ceylon Tea</a></li>
+                    <li><a href="products.html#seeds" class="hover:text-white transition">Healthy Seeds</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-xl font-semibold mb-4 text-secondary">Contact Us</h4>
+                <ul class="space-y-2 text-gray-300 text-sm">
+                    <li class="flex items-start gap-3"><i class="fas fa-map-marker-alt mt-1 text-secondary"></i> <span>123 Spice Route, Colombo 03, Sri Lanka</span></li>
+                    <li class="flex items-center gap-3"><i class="fas fa-phone text-secondary"></i> <span>+94 11 234 5678</span></li>
+                    <li class="flex items-center gap-3"><i class="fas fa-envelope text-secondary"></i> <span>info@ceylonzi.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-white/20 text-center text-gray-400 text-sm">
+            &copy; 2026 CEYLONZI. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
